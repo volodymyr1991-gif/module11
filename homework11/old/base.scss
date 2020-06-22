@@ -1,0 +1,72 @@
+html,
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  background-color: #ffffff;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  
+}
+ul {
+  list-style: none;
+}
+button,
+input,
+textarea,
+section,
+option {
+  outline: none;
+  border: none;
+}
+button {
+  display: block;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+.container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  /* Видаляємо елемент з потоку документа */
+  position: absolute;
+  /* Тимчасове рішення для невірно сказаного, розмазав тексту */
+  white-space: nowrap;
+  /* Встановлюємо мінімально можливий розмір (деякі скрінрідери ігнорують елементи з нульовою висотою і шириною) */
+  width: 1px;
+  height: 1px;
+  /* Приховуємо контент який вилазить за межі */
+  overflow: hidden;
+  /* Скидаємо будь-які властивості, які можуть вплинути на розмір елемента */
+  border: 0;
+  padding: 0;
+  /* Вирізаємо ту частину контенту, яка повинна відображатися. */
+  /* Застаріла властивість clip для старих браузерів */
+  clip: rect(0 0 0 0);
+  /* clip-path для нових браузерів. inset (50%) визначає область вставки, яка дозволить контенту зникнути.  */
+  clip-path: inset(50%);
+    /* Схоже, ніхто до кінця не розуміє, чому тут margin: -1px. Крім того, це призводить до проблем (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
+  margin: -1px;
+}

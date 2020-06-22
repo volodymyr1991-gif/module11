@@ -1,0 +1,149 @@
+.header{
+    margin: 0 auto;
+}
+
+// BANER
+
+.baner{
+background: linear-gradient(
+    0deg,
+    rgba(252, 227, 138, 0.9) 0%,
+    rgba(243, 129, 129, 0.9) 100%
+  ),
+  url(../images/Layer15.png) no-repeat;
+background-position: center;
+background-size: cover;
+@media (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi) {
+    background: linear-gradient(
+        0deg,
+        rgba(252, 227, 138, 0.9) 0%,
+        rgba(243, 129, 129, 0.9) 100%
+      ),
+      url(../images/Layer15@2x.png) no-repeat center;
+    background-size: cover;
+  
+  }
+}
+// NAVIGATION
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0 165px;
+    &__logo{
+        color: $header-color;
+        font-family: $montserat-bold;
+        font-size: $size-logo;
+        transition: color 200ms linear;
+        line-height: 1.2;
+        &:hover {
+            color: $header-color-hover;
+          }
+    }
+}
+// MENU
+
+.menu{
+    // min-width: 621px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   &__item{
+     position: relative;
+     &::after{
+      display: block;
+       content: "";
+       width: 50px;
+       height: 3px;
+       background-color: $header-color-hover;
+       position: absolute;
+       transition: 200ms linear;
+       bottom: -12px;
+       opacity: 0;
+
+       
+      }
+      &:hover::after{
+        opacity: 1;
+    
+     }
+    
+   } 
+    
+   &__item:not(:last-child){
+     margin-right: 50px;
+
+   }
+   &__linc{
+    color: $header-color;
+    font-family: "Montserrat-Regular";
+    text-transform: uppercase;
+    font-size: 14px;
+    transition: color 200ms linear;
+    &:hover {
+      color: $header-color-hover;
+    }
+  }
+
+}
+
+.menu__item--service::after{
+  width: 62px;
+}
+
+
+.menu__item--blog::after{
+  width: 43px;
+}
+
+.menu__item--contact::after{
+  width: 67px;
+}
+
+.menu__item--coshuk::after{
+  width: 20px;
+}
+
+.menu__item--poshuk::after{
+  width: 20px;
+}
+
+
+
+.menu__item-svg{
+  fill: $header-color;
+  &:hover{
+    fill: $header-color-hover;
+  }
+}
+
+.wrap{
+  color: $header-color;
+  &__text{
+    text-align: center;
+    font-family: $kaushan-script;
+    font-size: 72px;
+    padding: 0 0 38px 0;
+  }
+  &__title{
+    text-align: center;
+    font-family: $montserat-bold;
+    font-size: 150px;
+    text-transform: uppercase;
+    margin: 0;
+    padding:0px 273px 110px;
+  }
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  &__button{
+    color: $header-color;
+    font-family: $montserat-bold;
+    border: 3px solid $header-color;
+    padding: 10px 32px;
+    margin-bottom: 235px;
+  }
+}
+
