@@ -1,0 +1,100 @@
+.theam-list{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    
+    &__item-name{
+        font-size: $base-fonts-size;
+        font-family: $montserat-bold;
+        color: $color-title;
+        text-transform: uppercase;
+        text-align: center;
+        margin-top: 30px;
+        margin-bottom: 16px;
+    }
+    &__item-position{
+        font-size: 15px;
+        font-family: $roboto-ligth-italic;
+        color: $base-color-text;
+        line-height: 1.6;
+        text-align: center;
+
+    }
+    &__item{
+        position: relative;
+        &:hover &-gradient{
+            opacity: 0.8;
+            transform: translate(-10px, -10px);
+        }
+        &:hover &-img{
+            transition: 200ms linear;
+            transform: translate(-10px, -10px);
+        }
+        &:hover .socials {
+            opacity: 1;
+          }
+    }
+    &__item-box{
+        background-color:$color-item-box ;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 470px;
+  z-index: 0;
+
+    }
+    &__item-img{
+        position: relative;
+        z-index: 1;
+        transition: 200ms linear;
+    }
+
+    &__item-gradient{
+        position: absolute;
+  top: 0;
+  left: 0;
+  width: 380px;
+  height: 470px;
+        background-image: linear-gradient( 90deg,
+        rgb(252, 227, 138) 0%,
+        rgb(243, 129, 129) 100%);
+        transition: 200ms linear;
+        z-index: 2;
+        opacity: 0;
+    }
+        
+}
+// SOCIAL-ICON
+
+.socials{
+display: flex;
+position: absolute;
+transform: translate(-50%, -50%);
+  top: 42%;
+  left: 50%;
+  z-index: 3;
+  opacity: 0;
+  &__item:hover &__item-svg{
+    fill: #fff;
+  }
+  &__item-svg {
+    display: block;
+    fill: rgb(243, 129, 129);
+  }
+  &__item-linc{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 56px;
+      height: 56px;
+      margin-right: 1px;
+      background-color: rgb(252, 227, 138);
+  
+  transition: 200ms linear;
+  &:hover {
+    background: #f38181;
+  }
+  }
+
+}

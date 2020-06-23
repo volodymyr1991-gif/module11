@@ -1,9 +1,72 @@
-.theam-text {
+/* SECTION THEAM */
+
+.theam {
+  padding: 0 0 82px;
+  .theam-text {
     text-align: center;
-    font-size: 24px;
-    font-family: "Kaushan Script";
-    color: rgb(51, 51, 51);
+    font-size: $size-text-logo;
+    font-family: $kaushan-script;
+    color: $color-title;
     line-height: 1.2;
     padding-bottom: 20px;
   }
-  
+  .theam-title {
+    text-align: center;
+    font-size: 30px;
+    color: $color-title;
+    font-family: $montserat-bold;
+    text-transform: uppercase;
+    line-height: 1.2;
+    margin-bottom: 110px;
+
+    &::after {
+      position: relative;
+      top: 40px;
+      content: "";
+      display: block;
+      margin: 0 auto;
+      width: 60px;
+      height: 3px;
+      background-color: $color-title-after;
+    }
+  }
+  &-info {
+    margin: 0 auto;
+    width: 950px;
+    font-family: "Roboto-Regular";
+    font-size: 15px;
+    text-align: center;
+    color: rgb(153, 153, 153);
+    line-height: 1.6;
+    margin-bottom: 94px;
+  }
+}
+
+
+
+
+
+
+
+
+// .theam-title--after::after {
+//   position: relative;
+//   top: 40px;
+//   content: "";
+//   display: block;
+//   margin: 0 auto;
+//   width: 60px;
+//   height: 3px;
+//   background-color: $color-title-after;
+// }
+
+// .theam-info {
+//   margin: 0 auto;
+//   width: 950px;
+//   font-family: "Roboto-Regular";
+//   font-size: 15px;
+//   text-align: center;
+//   color: rgb(153, 153, 153);
+//   line-height: 1.6;
+//   margin-bottom: 94px;
+// }

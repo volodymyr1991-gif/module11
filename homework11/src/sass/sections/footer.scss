@@ -1,0 +1,45 @@
+/* FOOTER */
+
+.footer {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 63px;
+ border-top: 1px solid rgb(229, 229, 229);
+ padding: 0;
+ &-text {
+    position: relative;
+    left: 24px;
+  
+    font-size: $base-fonts-size;
+    font-family: $montserat-bold;
+ }
+ &-linc{
+    color: #f6a6a6;
+ }
+ 
+  }
+  .input{
+    
+    
+            position: relative;
+            left: 260px;
+            border: 1px solid rgb(229, 229, 229);
+            width: 230px;
+            height: 40px;
+            font-family: $roboto-ligth-italic;
+            font-size: 15px;
+         
+  }
+
+  .button {
+    font-family: $montserat-bold;
+    color: $header-color;
+    text-transform: uppercase;
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: #95e1d3;
+    cursor: pointer;
+  }
